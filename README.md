@@ -67,13 +67,14 @@
                             └────────────────────────────────────┘
 ```
 
-## The four repos
+## The five repos
 
 | Repo | Purpose | Tech |
 |---|---|---|
 | [**`attribyte-web`**](https://github.com/Dev-Harsh0218/attribyte-web) | Marketing site + React admin dashboard | Next.js 16 (App Router, Turbopack), React 19, TypeScript, Tailwind v4, Framer Motion, lucide-react |
 | [**`attribyte-api`**](https://github.com/Dev-Harsh0218/attribyte-api) | Backend — REST ingestion + Kafka producer + Postgres consumer | Node.js 20+, Express 4, TypeScript (ES modules, NodeNext), Kafka (kafkajs), PostgreSQL (pg), Zod, Pino, Helmet, CORS |
 | [**`attribyte-sdk-kotlin`**](https://github.com/Dev-Harsh0218/attribyte-sdk-kotlin) | Kotlin Android SDK — Play Install Referrer + event batching | Kotlin 2.0, Android SDK 21+, coroutines, kotlinx-serialization, OkHttp, Play `installreferrer` library |
+| [**`attribyte-test-app`**](https://github.com/Dev-Harsh0218/attribyte-test-app) | Standalone Android app that integrates the SDK — reference for consumers | Kotlin, AppCompat, Material 3, JitPack SDK dependency |
 | [**`attribyte-platform`**](https://github.com/Dev-Harsh0218/attribyte-platform) | Meta-repo (this) — architecture, cross-repo docs | — |
 
 ## The flow
@@ -112,7 +113,8 @@
 - ✅ **Platform meta-repo** (this repo) — architecture doc
 - ✅ **attribyte-web** — Next.js marketing site + interactive dashboard preview — [attribyte-web.vercel.app](https://attribyte-web.vercel.app)
 - ✅ **attribyte-api** — Node.js + Express + Kafka + Postgres scaffold with `/v1/installs` + `/v1/events`
-- ✅ **attribyte-sdk-kotlin** — Android SDK with Play Install Referrer integration, disk-backed event queue, exponential-backoff retry, and a runnable sample app
+- ✅ **attribyte-sdk-kotlin** — Android SDK with Play Install Referrer integration, disk-backed event queue, and exponential-backoff retry
+- ✅ **attribyte-test-app** — standalone Android consumer app demonstrating SDK integration (6 API demo buttons + on-screen event log)
 
 ## What I'd do differently at 10× scale
 
