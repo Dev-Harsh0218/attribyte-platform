@@ -67,12 +67,13 @@
                             └────────────────────────────────────┘
 ```
 
-## The three repos
+## The four repos
 
 | Repo | Purpose | Tech |
 |---|---|---|
 | [**`attribyte-web`**](https://github.com/Dev-Harsh0218/attribyte-web) | Marketing site + React admin dashboard | Next.js 16 (App Router, Turbopack), React 19, TypeScript, Tailwind v4, Framer Motion, lucide-react |
 | [**`attribyte-api`**](https://github.com/Dev-Harsh0218/attribyte-api) | Backend — REST ingestion + Kafka producer + Postgres consumer | Node.js 20+, Express 4, TypeScript (ES modules, NodeNext), Kafka (kafkajs), PostgreSQL (pg), Zod, Pino, Helmet, CORS |
+| [**`attribyte-sdk-kotlin`**](https://github.com/Dev-Harsh0218/attribyte-sdk-kotlin) | Kotlin Android SDK — Play Install Referrer + event batching | Kotlin 2.0, Android SDK 21+, coroutines, kotlinx-serialization, OkHttp, Play `installreferrer` library |
 | [**`attribyte-platform`**](https://github.com/Dev-Harsh0218/attribyte-platform) | Meta-repo (this) — architecture, cross-repo docs | — |
 
 ## The flow
@@ -109,9 +110,9 @@
 ## Build status
 
 - ✅ **Platform meta-repo** (this repo) — architecture doc
-- 🟡 **attribyte-web** — Next.js marketing site + dashboard preview (in progress)
-- 🟡 **attribyte-api** — Node.js + Express + Kafka scaffold (in progress)
-- ⏳ **Android SDK** — reference implementation planned (not required for portfolio demo)
+- ✅ **attribyte-web** — Next.js marketing site + interactive dashboard preview — [attribyte-web.vercel.app](https://attribyte-web.vercel.app)
+- ✅ **attribyte-api** — Node.js + Express + Kafka + Postgres scaffold with `/v1/installs` + `/v1/events`
+- ✅ **attribyte-sdk-kotlin** — Android SDK with Play Install Referrer integration, disk-backed event queue, exponential-backoff retry, and a runnable sample app
 
 ## What I'd do differently at 10× scale
 
